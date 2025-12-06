@@ -1,0 +1,36 @@
+KBS + ABS defines our Hybrid System for Library Management
+
+KBS is based upon improved rule-based system BY ESTABLISHING RELATIONSHIP
+BETWEEN THE AGENT - in this case book management and member management
+ABS is then the database that interact with each other - the book management and
+member management
+
+book management and member management relationship defines the KBS system,
+such that BORROWED BOOKS is stored in the Member Management System
+and then updates it on the 'AVAILABLE BOOKS' stored in the Book Management System
+
+
+RELATIONSHIP
+book management <> member management
+
+
+KBS RULES AND FEATURES(that works with relationships between book management agent and book management agent):
+*crud operation between the two agent - member management, book management //
+*add an option to delete book - "delete book", to delete existing book by book id,
+but if one member has borrowed that book then it cannot be deleted from the database //
+*a limit for each book in the database to only have 10 quantity that can be stored for each //
+
+*a member can only borrow upto 3 books at a time
+*if member has existing book fines, then it cannot borrow another book
+unless overdue fines is paid
+*simulate time in realtime by enabling time input, so that the fine calculation is
+seen accordingly. can consider creating a GUI(graphical interface) to apply this properly
+
+AGENT-BASED SYSTEM:
+	INVENTORY AGENTS:
+		*book management system(which monitors availability of books) //
+		*member management system(which monitors borrowing of books) //
+
+
+
+
